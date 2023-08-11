@@ -1,11 +1,8 @@
 #include <stdlib.h>
 
-
 #include <time.h>
 
-
 #include <stdio.h>
-
 
 /**
  * main - Prints a text according number
@@ -13,12 +10,9 @@
  *
  */
 
-
 int main(void)
 
-
 {
-
 
 	int n, lastd;
 
@@ -39,6 +33,5 @@ int main(void)
 	printf("Last digit of %d and is less than 6 and not 0\n", n, lastd);
 	}
 	return (0);
-
 
 }
