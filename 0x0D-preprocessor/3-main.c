@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "3-function_like_macro.h"
-#include "3-function_like_macro.h"
+#include "dog.h"
 
 /**
  * main - check the code
@@ -9,11 +8,11 @@
  */
 int main(void)
 {
-    int i;
-    int j;
+    dog_t my_dog;
 
-    i = ABS(-98) * 10;
-    j = ABS(98) * 10;
-    printf("%d, %d\n", i, j);
+    my_dog.name = "Poppy";
+    my_dog.age = 3.5;
+    my_dog.owner = "Bob";
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
     return (0);
 }
