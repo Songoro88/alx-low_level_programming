@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strstr - Entry point
+ * _strstr - point of Entry
  * @haystack: input
  * @needle: input
  * Return: Always 0 (Success)
