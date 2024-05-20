@@ -1,31 +1,31 @@
 #include "main.h"
 
 /**
- * _strcat - Two strings concatenates
- * @dest: input value
- * @src: input value
- *
- * Return: void
+ * *_strcat - func. commute srtings
+ * @dest: param pointer to a character
+ * @src: param pointer to a character
+ * Return: return value of Dest
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int x;
-	int y;
+	int i;
+	int j;
 
-	x = 0;
-	while (dest[x] != '\0')
-	{
-		x++;
-	}
+	i = 0;
 	j = 0;
-	while (src[y] != '\0')
+
+	while (dest[i] != '\0')
 	{
-		dest[x] = src[y];
-		x++;
-		y++;
+		i++;
+	}
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;
+		i++;
 	}
 
-	dest[x] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
